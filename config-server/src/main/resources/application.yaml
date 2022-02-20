@@ -1,0 +1,12 @@
+spring:
+  cloud:
+    config:
+      server:
+        git:
+#          opcje: zdalny git, lokalny git, lokalny system plików
+          uri: https://github.com/lukasze/fortune-cookie.git
+  application:
+    name: config-server
+server:
+#  domyślny port dla config-server
+  port: 8888
